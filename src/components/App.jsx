@@ -8,7 +8,7 @@ import { UseEffect } from "./UseEffect";
 function App() {
     return (
         <div className="container">
-            <div className="text-center mt-4 d-grid gap-2 container">
+            <div className="text-center mt-4 mb-4 d-grid gap-2 container">
                 {/* <UseEffect /> */}
                 <Topics />
             </div>
