@@ -1,16 +1,20 @@
 import React from "react";
-import { Topics } from "./Topics";
-import { UseEffect } from "./UseEffect";
+import { Link, Outlet } from "react-router-dom";
 
-// export const currDate = () => {
-//     return new Date().toString();
-// };
 function App() {
     return (
         <div className="container">
-            <div className="text-center mt-4 mb-4 d-grid gap-2 container">
-                {/* <UseEffect /> */}
-                <Topics />
+            <div className="d-grid gap-3">
+                <Link to="/topics/new" className="btn btn-primary">
+                    Add New Topic
+                </Link>
+
+                <Link to="/topics/all" className="btn btn-success">
+                    View All Topics
+                </Link>
+            </div>
+            <div className="mt-5">
+                <Outlet />
             </div>
         </div>
     );
