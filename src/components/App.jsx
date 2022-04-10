@@ -3,7 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 
 function App() {
     return (
-        <div className="container">
+        <div className="container mt-5">
             <div className="d-grid gap-3">
                 <Link to="/topics/new" className="btn btn-primary">
                     Add New Topic
